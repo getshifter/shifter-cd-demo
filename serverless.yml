@@ -1,0 +1,22 @@
+service: shifter-cd-demo
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  update:
+    handler: src/handler.index
+    events:
+      - http:
+          method: post
+          path: /
+          request:
+            querystrings:
+              site_id: true
+              wppusher_token: true
+              wppusher_package: true
+              username: true
+              password: true
+
+
+
