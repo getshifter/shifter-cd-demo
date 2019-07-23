@@ -19,6 +19,9 @@ sls deploy
 5. Create and add Webhook URL to GitHub
 6. Get Site ID from Shifter Dashboard
 
+More info:
+- [GitHub Webhooks and Push-to-Deploy](https://docs.wppusher.com/article/20-github-webhooks-and-push-to-deploy)
+
 ### Creating Webhook URL to GitHub
 
 #### Example Params:
