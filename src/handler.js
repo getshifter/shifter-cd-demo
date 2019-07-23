@@ -78,6 +78,6 @@ module.exports.index = async event => {
 
   return {
     statusCode: 200,
-    body: JSON.stringify('Did it work?' )
+    body: JSON.stringify("Did it work?")
   };
 };
