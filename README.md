@@ -2,6 +2,14 @@
 
 Work in progress.
 
+### Serverless
+
+Deploy serverless function to AWS to get your API Gateway URL.
+
+```
+sls deploy
+```
+
 ### Initial Setup
 
 1. Install WP Pusher
