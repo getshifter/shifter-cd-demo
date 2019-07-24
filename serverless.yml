@@ -3,6 +3,9 @@ provider:
   name: aws
   runtime: nodejs10.x
 
+plugins:
+  - serverless-offline
+
 functions:
   update:
     handler: src/handler.index
