@@ -59,22 +59,22 @@ module.exports.index = async event => {
   /**
    * Stop WordPress
    */
-  await login.login(username, password).then(result => {
-    const stop = new Sites({
-      token: result.AccessToken
-    });
-    return stop.stopWordPress(site_id);
-  });
+  // await login.login(username, password).then(result => {
+  //   const stop = new Sites({
+  //     token: result.AccessToken
+  //   });
+  //   return stop.stopWordPress(site_id);
+  // });
 
   /**
    * Create Artifact
    */
-  await login.login(username, password).then(result => {
-    const generate = new Artifacts({
-      token: result.AccessToken
-    });
-    return generate.generate(site_id);
-  });
+  // await login.login(username, password).then(result => {
+  //   const generate = new Artifacts({
+  //     token: result.AccessToken
+  //   });
+  //   return generate.generate(site_id);
+  // });
 
   return {
     statusCode: 200,
